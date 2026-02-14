@@ -1,8 +1,10 @@
 import React from "react";
-
+import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
-const Register = ({ onRegisterSuccess }) => {
+const Register = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -14,11 +16,15 @@ const Register = ({ onRegisterSuccess }) => {
 
   const onSubmit = (data) => {
     localStorage.setItem("adminUser", JSON.stringify(data));
-
+    toast.success("Paskyra sėkmingai sukurta! Nukreipiame...", {
+      duration: 3000,
+      icon: "🚀",
+    });
+    setTimeout(() => {
+      navigate("/login");
+    }, 2500);
     console.log("Sekmingai uzregistruota", data);
-    // onRegisterSuccess();
   };
-
 
   return (
     <div style={{ display: "block" }}>
