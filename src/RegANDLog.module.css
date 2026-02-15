@@ -1,0 +1,81 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1e33;
+  cursor: default;
+}
+
+.button {
+  background-color: #1c1e33;
+  margin-top: 15px;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #232749;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.button:active {
+  transform: translateY(0) scale(0.98); /* Paspaudus mygtukas trumpam "susispaudžia" */
+}
+
+.main {
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h2 {
+  text-align: center;
+  font-size: 34px;
+}
+
+.form {
+  width: 450px;
+  padding-block: 50px;
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-size: 18px;
+}
+
+.input {
+  background-color: #25273e;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  margin-block: 15px;
+}
+
+/* SPRENDIMAS AUTOFILL PROBLEMAI */
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus {
+
+  -webkit-text-fill-color: white !important;
+  box-shadow: 0 0 0px 1000px #25273e inset !important;
+  border: none !important;
+}
+
+.error {
+  color: #ff0000d8;
+  margin-bottom: 10px;
+}

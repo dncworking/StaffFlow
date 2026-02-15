@@ -2,6 +2,7 @@ import React from "react";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import style from "./RegANDLog.module.css";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -17,33 +18,43 @@ const Register = () => {
   const onSubmit = (data) => {
     localStorage.setItem("adminUser", JSON.stringify(data));
     toast.success("Paskyra sėkmingai sukurta! Nukreipiame...", {
-      duration: 3000,
+      duration: 2000,
       icon: "🚀",
     });
     setTimeout(() => {
       navigate("/login");
-    }, 2500);
+    }, 1500);
     console.log("Sekmingai uzregistruota", data);
   };
 
   return (
-    <div style={{ display: "block" }}>
-      <h2>Registracija</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <label>Vardas</label>
+    <div className={style.main}>
+      <h2 className={style.h2}>Registracija</h2>
+      <form onSubmit={handleSubmit(onSubmit)} className={style.form}>
+        {/* <label className={style.label}>Vardas</label> */}
         <input
+          className={style.input}
+          placeholder="Vardas"
           type="text"
           {...register("firstName", { required: "Vardas butinas" })}
         />
-        {errors.firstName && <span>{errors.firstName.message}</span>}
-        <label>Pavarde</label>
+        {errors.firstName && (
+          <span className={style.error}>{errors.firstName.message}</span>
+        )}
+        {/* <label className={style.label}>Pavarde</label> */}
         <input
+          placeholder="Pavardė"
+          className={style.input}
           type="text"
           {...register("lastName", { required: "Pavarde butina" })}
         />
-        {errors.lastName && <span>{errors.lastName.message}</span>}
-        <label>El. Pastas</label>
+        {errors.lastName && (
+          <span className={style.error}>{errors.lastName.message}</span>
+        )}
+        {/* <label className={style.label}>El. Pastas</label> */}
         <input
+          className={style.input}
+          placeholder="El. paštas"
           type="text"
           {...register("email", {
             required: "Pastas butinas",
@@ -53,17 +64,25 @@ const Register = () => {
             },
           })}
         />
-        {errors.email && <span>{errors.email.message}</span>}
-        <label>Imones pavadinimas</label>
+        {errors.email && (
+          <span className={style.error}>{errors.email.message}</span>
+        )}
+        {/* <label className={style.label}>Imones pavadinimas</label> */}
         <input
+          className={style.input}
+          placeholder="Įmonės pavadinimas"
           type="text"
           {...register("name", {
             required: "Imones pavadinimas privalomas!",
           })}
         />
-        {errors.name && <span>{errors.name.message}</span>}
-        <label>Slaptazodis</label>
+        {errors.name && (
+          <span className={style.error}>{errors.name.message}</span>
+        )}
+        {/* <label className={style.label}>Slaptazodis</label> */}
         <input
+          className={style.input}
+          placeholder="Slaptažodis"
           type="password"
           {...register("password", {
             required: "Slaptazodis privalomas",
@@ -74,9 +93,13 @@ const Register = () => {
             },
           })}
         />
-        {errors.password && <span>{errors.password.message}</span>}
-        <label>Pakartokite slaptazodi</label>
+        {errors.password && (
+          <span className={style.error}>{errors.password.message}</span>
+        )}
+        {/* <label className={style.label}>Pakartokite slaptazodi</label> */}
         <input
+          className={style.input}
+          placeholder="Pakartokite slaptažodį"
           type="password"
           {...register("confirmPassword", {
             required: "Slaptazodis privalomas",
@@ -85,9 +108,11 @@ const Register = () => {
           })}
         />
         {errors.confirmPassword && (
-          <span>{errors.confirmPassword.message}</span>
+          <span className={style.error}>{errors.confirmPassword.message}</span>
         )}
-        <button type="submit">Sukurti Paskyra</button>
+        <button type="submit" className={style.button}>
+          Sukurti Paskyra
+        </button>
       </form>
     </div>
   );

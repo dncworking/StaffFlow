@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import style from "./RegANDLog.module.css";
 const Login = () => {
   const navigate = useNavigate();
   const {
@@ -28,21 +29,34 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h2>Prisijungimas</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <label>El. Pastas</label>
+    <div className={style.main}>
+      <h2 className={style.h2}>Prisijungimas</h2>
+      <form onSubmit={handleSubmit(onSubmit)} className={style.form}>
         <input
+          className={style.input}
+          placeholder="El. Paštas"
           type="text"
           {...register("email", { required: "Įveskite el. paštą" })}
         />
-        <label>Slaptazodis</label>
+        {errors.email && (
+          <span className={style.error}>{errors.email.message}</span>
+        )}
+
         <input
+          className={style.input}
+          placeholder="Slaptažodis"
           type="password"
           {...register("password", { required: "Įveskite slaptažodį" })}
         />
-        {errors.loginError && <p>{errors.loginError.message}</p>}
-        <button type="submit">Prisijungti</button>
+        {errors.password && (
+          <span className={style.error}>{errors.password.message}</span>
+        )}
+        {errors.loginError && (
+          <p className={style.error}>{errors.loginError.message}</p>
+        )}
+        <button type="submit" className={style.button}>
+          Prisijungti
+        </button>
       </form>
     </div>
   );
