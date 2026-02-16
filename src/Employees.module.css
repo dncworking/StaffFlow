@@ -1,0 +1,118 @@
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 20px;
+  width: 280px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: #00d4ff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #1c1e33;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+.badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #00d4ff;
+  color: #1c1e33;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+}
+
+.name {
+  margin: 10px 0 5px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.position {
+  color: #a0a4d0;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.stats {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 10px;
+  color: #6a6e9a;
+  text-transform: uppercase;
+}
+
+.value {
+  font-weight: bold;
+  color: #00ffaa;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button:hover {
+  background: #00d4ff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.btnDelete:hover {
+  background: #ff4d4d !important;
+}
