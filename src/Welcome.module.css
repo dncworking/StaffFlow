@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: azure;
+  margin-inline: 20%;
+}
+.h1 {
+  font-size: 58px;
+}
+.h3 {
+  font-size: 25px;
+}
+.button {
+  margin-inline: 20px;
+  font-size: 15px;
+  background-color: #1c1e33;
+  margin-top: 15px;
+  width: 200px;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #232749;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.button:active {
+  transform: translateY(0) scale(0.98); 
+}
