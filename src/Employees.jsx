@@ -1,6 +1,6 @@
 import style from "./Employees.module.css";
 
-function Employees({ employees }) {
+function Employees({ employees, onDelete }) {
   return (
     <div className={style.card}>
       <div className={style.header}>
@@ -22,9 +22,13 @@ function Employees({ employees }) {
         </div>
 
         <div className={style.buttons}>
-          <button className={style.btnInfo}>ℹ️</button>
           <button className={style.btnEdit}>📝</button>
-          <button className={style.btnDelete}>🗑️</button>
+          <button
+            className={style.btnDelete}
+            onClick={() => onDelete(employees.id)}
+          >
+            🗑️
+          </button>
         </div>
       </div>
     </div>

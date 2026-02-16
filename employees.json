@@ -1,320 +1,289 @@
 {
-    "employees": [
-        {
-            "id": 1,
-            "firstName": "Jonas",
-            "lastName": "Jonaitis",
-            "birthDate": "1985-05-12",
-            "position": "Vyriausiasis programuotojas",
-            "salary": 4500,
-            "department": "IT",
-            "startDate": "2020-01-15",
-            "photo": "https://i.pravatar.cc/150?u=1",
-            "skills": [
-                "React",
-                "Node.js",
-                "SQL"
-            ]
-        },
-        {
-            "id": 2,
-            "firstName": "Aistė",
-            "lastName": "Aistytė",
-            "birthDate": "1992-03-22",
-            "position": "UI/UX dizainerė",
-            "salary": 3200,
-            "department": "Dizainas",
-            "startDate": "2021-06-10",
-            "photo": "https://i.pravatar.cc/150?u=2",
-            "skills": [
-                "Figma",
-                "Adobe XD",
-                "CSS Modules"
-            ]
-        },
-        {
-            "id": 3,
-            "firstName": "Marius",
-            "lastName": "Kazlauskas",
-            "birthDate": "1988-11-05",
-            "position": "Projektų vadovas",
-            "salary": 3800,
-            "department": "Vadyba",
-            "startDate": "2019-03-01",
-            "photo": "https://i.pravatar.cc/150?u=3",
-            "skills": [
-                "Agile",
-                "Jira",
-                "Scrum"
-            ]
-        },
-        {
-            "id": 4,
-            "firstName": "Eglė",
-            "lastName": "Petrauskienė",
-            "birthDate": "1995-07-14",
-            "position": "Marketingo specialistė",
-            "salary": 2500,
-            "department": "Rinkodara",
-            "startDate": "2022-09-20",
-            "photo": "https://i.pravatar.cc/150?u=4",
-            "skills": [
-                "SEO",
-                "Google Ads",
-                "Content Writing"
-            ]
-        },
-        {
-            "id": 5,
-            "firstName": "Tomas",
-            "lastName": "Pavardenis",
-            "birthDate": "1990-01-30",
-            "position": "Backend programuotojas",
-            "salary": 4200,
-            "department": "IT",
-            "startDate": "2020-11-12",
-            "photo": "https://i.pravatar.cc/150?u=5",
-            "skills": [
-                "Python",
-                "Django",
-                "PostgreSQL"
-            ]
-        },
-        {
-            "id": 6,
-            "firstName": "Lina",
-            "lastName": "Sausienė",
-            "birthDate": "1987-12-12",
-            "position": "Finansininkė",
-            "salary": 2900,
-            "department": "Finansai",
-            "startDate": "2018-05-15",
-            "photo": "https://i.pravatar.cc/150?u=6",
-            "skills": [
-                "Excel",
-                "Audit",
-                "ERP systems"
-            ]
-        },
-        {
-            "id": 7,
-            "firstName": "Darius",
-            "lastName": "Beržinis",
-            "birthDate": "1982-04-18",
-            "position": "IT skyriaus vadovas",
-            "salary": 5500,
-            "department": "IT",
-            "startDate": "2015-08-01",
-            "photo": "https://i.pravatar.cc/150?u=7",
-            "skills": [
-                "Leadership",
-                "Architecture",
-                "Cloud"
-            ]
-        },
-        {
-            "id": 8,
-            "firstName": "Karolina",
-            "lastName": "Vaitkutė",
-            "birthDate": "1998-10-02",
-            "position": "Jaunesnioji testuotoja",
-            "salary": 1800,
-            "department": "IT",
-            "startDate": "2023-02-01",
-            "photo": "https://i.pravatar.cc/150?u=8",
-            "skills": [
-                "Manual Testing",
-                "Bug Reporting"
-            ]
-        },
-        {
-            "id": 9,
-            "firstName": "Arūnas",
-            "lastName": "Girdvainis",
-            "birthDate": "1991-06-25",
-            "position": "Pardavimų vadybininkas",
-            "salary": 2700,
-            "department": "Pardavimai",
-            "startDate": "2021-01-10",
-            "photo": "https://i.pravatar.cc/150?u=9",
-            "skills": [
-                "B2B",
-                "Negotiation",
-                "CRM"
-            ]
-        },
-        {
-            "id": 10,
-            "firstName": "Gintarė",
-            "lastName": "Užupytė",
-            "birthDate": "1994-02-14",
-            "position": "Personalo vadovė",
-            "salary": 3100,
-            "department": "HR",
-            "startDate": "2020-04-15",
-            "photo": "https://i.pravatar.cc/150?u=10",
-            "skills": [
-                "Recruitment",
-                "Training",
-                "Coaching"
-            ]
-        },
-        {
-            "id": 11,
-            "firstName": "Andrius",
-            "lastName": "Lukošius",
-            "birthDate": "1989-09-09",
-            "position": "DevOps inžinierius",
-            "salary": 4800,
-            "department": "IT",
-            "startDate": "2019-10-01",
-            "photo": "https://i.pravatar.cc/150?u=11",
-            "skills": [
-                "Docker",
-                "AWS",
-                "Kubernetes"
-            ]
-        },
-        {
-            "id": 12,
-            "firstName": "Vaida",
-            "lastName": "Karklytė",
-            "birthDate": "1993-08-27",
-            "position": "Duomenų analitikė",
-            "salary": 3500,
-            "department": "Duomenys",
-            "startDate": "2022-01-05",
-            "photo": "https://i.pravatar.cc/150?u=12",
-            "skills": [
-                "PowerBI",
-                "SQL",
-                "Statistics"
-            ]
-        },
-        {
-            "id": 13,
-            "firstName": "Rimas",
-            "lastName": "Kalnietis",
-            "birthDate": "1980-01-01",
-            "position": "Sandėlio vadovas",
-            "salary": 2400,
-            "department": "Logistika",
-            "startDate": "2012-05-20",
-            "photo": "https://i.pravatar.cc/150?u=13",
-            "skills": [
-                "Logistics",
-                "Inventory Management"
-            ]
-        },
-        {
-            "id": 14,
-            "firstName": "Simona",
-            "lastName": "Sniegiūtė",
-            "birthDate": "1996-12-05",
-            "position": "Socialinių tinklų vadybininkė",
-            "salary": 2200,
-            "department": "Rinkodara",
-            "startDate": "2023-05-12",
-            "photo": "https://i.pravatar.cc/150?u=14",
-            "skills": [
-                "Copywriting",
-                "Instagram",
-                "Canva"
-            ]
-        },
-        {
-            "id": 15,
-            "firstName": "Paulius",
-            "lastName": "Starkus",
-            "birthDate": "1986-03-15",
-            "position": "Sistemų administratorius",
-            "salary": 3300,
-            "department": "IT",
-            "startDate": "2017-02-14",
-            "photo": "https://i.pravatar.cc/150?u=15",
-            "skills": [
-                "Linux",
-                "Security",
-                "Networking"
-            ]
-        },
-        {
-            "id": 16,
-            "firstName": "Monika",
-            "lastName": "Šalkutė",
-            "birthDate": "1991-11-18",
-            "position": "Teisininkė",
-            "salary": 3900,
-            "department": "Teisė",
-            "startDate": "2020-07-01",
-            "photo": "https://i.pravatar.cc/150?u=16",
-            "skills": [
-                "Contracts",
-                "GDPR",
-                "Corporate Law"
-            ]
-        },
-        {
-            "id": 17,
-            "firstName": "Viktoras",
-            "lastName": "Sausas",
-            "birthDate": "1984-05-05",
-            "position": "Gamybos vadovas",
-            "salary": 4000,
-            "department": "Gamyba",
-            "startDate": "2016-09-15",
-            "photo": "https://i.pravatar.cc/150?u=17",
-            "skills": [
-                "Manufacturing",
-                "Quality Control"
-            ]
-        },
-        {
-            "id": 18,
-            "firstName": "Gabija",
-            "lastName": "Rūtytė",
-            "birthDate": "1997-04-22",
-            "position": "Klientų aptarnavimo specialistė",
-            "salary": 1900,
-            "department": "Palaikymas",
-            "startDate": "2023-01-10",
-            "photo": "https://i.pravatar.cc/150?u=18",
-            "skills": [
-                "Communication",
-                "Zendesk",
-                "Problem Solving"
-            ]
-        },
-        {
-            "id": 19,
-            "firstName": "Robertas",
-            "lastName": "Klevas",
-            "birthDate": "1983-02-28",
-            "position": "Architektas",
-            "salary": 5000,
-            "department": "Projektavimas",
-            "startDate": "2014-11-01",
-            "photo": "https://i.pravatar.cc/150?u=19",
-            "skills": [
-                "AutoCAD",
-                "Revit",
-                "Planning"
-            ]
-        },
-        {
-            "id": 20,
-            "firstName": "Beata",
-            "lastName": "Morkutė",
-            "birthDate": "1990-08-12",
-            "position": "Apskaitininkė",
-            "salary": 2600,
-            "department": "Finansai",
-            "startDate": "2021-03-20",
-            "photo": "https://i.pravatar.cc/150?u=20",
-            "skills": [
-                "Taxation",
-                "Reporting"
-            ]
-        }
-    ]
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Jonas",
+      "lastName": "Jonaitis",
+      "birthDate": "1985-05-12",
+      "position": "Vyriausiasis programuotojas",
+      "salary": 4500,
+      "department": "IT",
+      "startDate": "2020-01-15",
+      "photo": "https://i.pravatar.cc/150?u=1",
+      "skills": [
+        "React",
+        "Node.js",
+        "SQL"
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Aistė",
+      "lastName": "Aistytė",
+      "birthDate": "1992-03-22",
+      "position": "UI/UX dizainerė",
+      "salary": 3200,
+      "department": "Dizainas",
+      "startDate": "2021-06-10",
+      "photo": "https://i.pravatar.cc/150?u=2",
+      "skills": [
+        "Figma",
+        "Adobe XD",
+        "CSS Modules"
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Marius",
+      "lastName": "Kazlauskas",
+      "birthDate": "1988-11-05",
+      "position": "Projektų vadovas",
+      "salary": 3800,
+      "department": "Vadyba",
+      "startDate": "2019-03-01",
+      "photo": "https://i.pravatar.cc/150?u=3",
+      "skills": [
+        "Agile",
+        "Jira",
+        "Scrum"
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "Eglė",
+      "lastName": "Petrauskienė",
+      "birthDate": "1995-07-14",
+      "position": "Marketingo specialistė",
+      "salary": 2500,
+      "department": "Rinkodara",
+      "startDate": "2022-09-20",
+      "photo": "https://i.pravatar.cc/150?u=4",
+      "skills": [
+        "SEO",
+        "Google Ads",
+        "Content Writing"
+      ]
+    },
+    {
+      "id": 5,
+      "firstName": "Tomas",
+      "lastName": "Pavardenis",
+      "birthDate": "1990-01-30",
+      "position": "Backend programuotojas",
+      "salary": 4200,
+      "department": "IT",
+      "startDate": "2020-11-12",
+      "photo": "https://i.pravatar.cc/150?u=5",
+      "skills": [
+        "Python",
+        "Django",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "id": 6,
+      "firstName": "Lina",
+      "lastName": "Sausienė",
+      "birthDate": "1987-12-12",
+      "position": "Finansininkė",
+      "salary": 2900,
+      "department": "Finansai",
+      "startDate": "2018-05-15",
+      "photo": "https://i.pravatar.cc/150?u=6",
+      "skills": [
+        "Excel",
+        "Audit",
+        "ERP systems"
+      ]
+    },
+    {
+      "id": 7,
+      "firstName": "Darius",
+      "lastName": "Beržinis",
+      "birthDate": "1982-04-18",
+      "position": "IT skyriaus vadovas",
+      "salary": 5500,
+      "department": "IT",
+      "startDate": "2015-08-01",
+      "photo": "https://i.pravatar.cc/150?u=7",
+      "skills": [
+        "Leadership",
+        "Architecture",
+        "Cloud"
+      ]
+    },
+    {
+      "id": 9,
+      "firstName": "Arūnas",
+      "lastName": "Girdvainis",
+      "birthDate": "1991-06-25",
+      "position": "Pardavimų vadybininkas",
+      "salary": 2700,
+      "department": "Pardavimai",
+      "startDate": "2021-01-10",
+      "photo": "https://i.pravatar.cc/150?u=9",
+      "skills": [
+        "B2B",
+        "Negotiation",
+        "CRM"
+      ]
+    },
+    {
+      "id": 10,
+      "firstName": "Gintarė",
+      "lastName": "Užupytė",
+      "birthDate": "1994-02-14",
+      "position": "Personalo vadovė",
+      "salary": 3100,
+      "department": "HR",
+      "startDate": "2020-04-15",
+      "photo": "https://i.pravatar.cc/150?u=10",
+      "skills": [
+        "Recruitment",
+        "Training",
+        "Coaching"
+      ]
+    },
+    {
+      "id": 11,
+      "firstName": "Andrius",
+      "lastName": "Lukošius",
+      "birthDate": "1989-09-09",
+      "position": "DevOps inžinierius",
+      "salary": 4800,
+      "department": "IT",
+      "startDate": "2019-10-01",
+      "photo": "https://i.pravatar.cc/150?u=11",
+      "skills": [
+        "Docker",
+        "AWS",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": 12,
+      "firstName": "Vaida",
+      "lastName": "Karklytė",
+      "birthDate": "1993-08-27",
+      "position": "Duomenų analitikė",
+      "salary": 3500,
+      "department": "Duomenys",
+      "startDate": "2022-01-05",
+      "photo": "https://i.pravatar.cc/150?u=12",
+      "skills": [
+        "PowerBI",
+        "SQL",
+        "Statistics"
+      ]
+    },
+    {
+      "id": 13,
+      "firstName": "Rimas",
+      "lastName": "Kalnietis",
+      "birthDate": "1980-01-01",
+      "position": "Sandėlio vadovas",
+      "salary": 2400,
+      "department": "Logistika",
+      "startDate": "2012-05-20",
+      "photo": "https://i.pravatar.cc/150?u=13",
+      "skills": [
+        "Logistics",
+        "Inventory Management"
+      ]
+    },
+    {
+      "id": 14,
+      "firstName": "Simona",
+      "lastName": "Sniegiūtė",
+      "birthDate": "1996-12-05",
+      "position": "Socialinių tinklų vadybininkė",
+      "salary": 2200,
+      "department": "Rinkodara",
+      "startDate": "2023-05-12",
+      "photo": "https://i.pravatar.cc/150?u=14",
+      "skills": [
+        "Copywriting",
+        "Instagram",
+        "Canva"
+      ]
+    },
+    {
+      "id": 15,
+      "firstName": "Paulius",
+      "lastName": "Starkus",
+      "birthDate": "1986-03-15",
+      "position": "Sistemų administratorius",
+      "salary": 3300,
+      "department": "IT",
+      "startDate": "2017-02-14",
+      "photo": "https://i.pravatar.cc/150?u=15",
+      "skills": [
+        "Linux",
+        "Security",
+        "Networking"
+      ]
+    },
+    {
+      "id": 16,
+      "firstName": "Monika",
+      "lastName": "Šalkutė",
+      "birthDate": "1991-11-18",
+      "position": "Teisininkė",
+      "salary": 3900,
+      "department": "Teisė",
+      "startDate": "2020-07-01",
+      "photo": "https://i.pravatar.cc/150?u=16",
+      "skills": [
+        "Contracts",
+        "GDPR",
+        "Corporate Law"
+      ]
+    },
+    {
+      "id": 17,
+      "firstName": "Viktoras",
+      "lastName": "Sausas",
+      "birthDate": "1984-05-05",
+      "position": "Gamybos vadovas",
+      "salary": 4000,
+      "department": "Gamyba",
+      "startDate": "2016-09-15",
+      "photo": "https://i.pravatar.cc/150?u=17",
+      "skills": [
+        "Manufacturing",
+        "Quality Control"
+      ]
+    },
+    {
+      "id": 19,
+      "firstName": "Robertas",
+      "lastName": "Klevas",
+      "birthDate": "1983-02-28",
+      "position": "Architektas",
+      "salary": 5000,
+      "department": "Projektavimas",
+      "startDate": "2014-11-01",
+      "photo": "https://i.pravatar.cc/150?u=19",
+      "skills": [
+        "AutoCAD",
+        "Revit",
+        "Planning"
+      ]
+    },
+    {
+      "id": 20,
+      "firstName": "Beata",
+      "lastName": "Morkutė",
+      "birthDate": "1990-08-12",
+      "position": "Apskaitininkė",
+      "salary": 2600,
+      "department": "Finansai",
+      "startDate": "2021-03-20",
+      "photo": "https://i.pravatar.cc/150?u=20",
+      "skills": [
+        "Taxation",
+        "Reporting"
+      ]
+    }
+  ]
 }
