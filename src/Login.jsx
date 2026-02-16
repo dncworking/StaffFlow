@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import style from "./RegANDLog.module.css";
-const Login = () => {
+const Login = ({ onLoginSuccess }) => {
   const navigate = useNavigate();
   const {
     register,
@@ -19,7 +19,8 @@ const Login = () => {
       savedUser.password === data.password
     ) {
       console.log("Prisijungta sekmingai!");
-      navigate("/dashboard");
+      onLoginSuccess();
+      navigate("/employees");
     } else {
       setError("loginError", {
         type: "manual",

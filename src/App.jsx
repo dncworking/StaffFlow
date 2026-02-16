@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import Register from "./Register";
 import Login from "./Login";
 import Welcome from "./Welcome";
-//import Dashboard from "./Dashboard"; // Atkomentuok, kai sukursi failą
+import EmployeesList from "./EmployeesList";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(
@@ -33,7 +33,7 @@ function App() {
         {/* PAGRINDINIS PUSLAPIS */}
         <Route
           path="/"
-          element={isAuthenticated ? <Navigate to="/dashboard" /> : <Welcome />}
+          element={isAuthenticated ? <Navigate to="/employees" /> : <Welcome />}
         />
 
         {/* REGISTRACIJA IR PRISIJUNGIMAS */}
@@ -42,10 +42,10 @@ function App() {
 
         {/* DARBUOTOJŲ SĄRAŠAS (APSAUGOTAS) */}
         <Route
-          path="/dashboard"
+          path="/employees"
           element={
             isAuthenticated ? (
-              <Dashboard onLogout={handleLogout} />
+              <EmployeesList onLogout={handleLogout} />
             ) : (
               <Navigate to="/login" />
             )
