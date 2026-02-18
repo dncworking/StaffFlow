@@ -8,15 +8,27 @@ import style from "./EmployeesList.module.css";
 function EmployeesList() {
   const [employees, setEmployees] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
         const result = await getAllData();
 
-        setEmployees(Array.isArray(result) ? result : []);
+        const storedUser = localStorage.getItem("user");
+        const user = storedUser ? JSON.parse(storedUser) : null;
+
+        const adminStatus = user?.email === "admin@admin.com";
+        setIsAdmin(adminStatus);
+
+        if (adminStatus) {
+          setEmployees(Array.isArray(result) ? result : []);
+        } else {
+          setEmployees([]);
+        }
       } catch (error) {
         console.error("Klaida:", error.message);
+        setEmployees([]);
       }
     };
 
@@ -36,7 +48,6 @@ function EmployeesList() {
     }
   };
 
-
   const filteredEmployees = employees.filter((person) => {
     const fullName = `${person.firstName} ${person.lastName}`.toLowerCase();
     return fullName.includes(searchQuery.toLowerCase());
@@ -44,12 +55,12 @@ function EmployeesList() {
 
   return (
     <>
-
       <NavBar onSearch={setSearchQuery} />
 
       <div className={style.container}>
-
-        {filteredEmployees.length > 0 ? (
+        {!isAdmin ? (
+          <p className={style.infoMessage}>Jūs neturite pridėtų darbuotojų</p>
+        ) : filteredEmployees.length > 0 ? (
           filteredEmployees.map((person) => (
             <Employees
               employees={person}
@@ -58,9 +69,7 @@ function EmployeesList() {
             />
           ))
         ) : (
-          <p
-            style={{ color: "white", textAlign: "center", gridColumn: "1/-1" }}
-          >
+          <p className={style.infoMessage}>
             {searchQuery
               ? "Nėra darbuotojų, atitinkančių paiešką"
               : "Kraunama..."}

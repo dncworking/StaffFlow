@@ -19,6 +19,7 @@ const Login = ({ onLoginSuccess }) => {
       savedUser.password === data.password
     ) {
       console.log("Prisijungta sekmingai!");
+      localStorage.setItem("user", JSON.stringify(savedUser));
       onLoginSuccess();
       navigate("/employees");
     } else {
