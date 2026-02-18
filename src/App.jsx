@@ -13,9 +13,9 @@ import EmployeesList from "./EmployeesList";
 import AddForm from "./AddEmployeesForm";
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    localStorage.getItem("isLoggedIn") === "true",
-  );
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    return localStorage.getItem("user") !== null;
+  });
 
   const handleLogin = () => {
     localStorage.setItem("isLoggedIn", "true");
