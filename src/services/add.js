@@ -1,12 +1,12 @@
 import axios from "axios";
 const API_URL = import.meta.env.VITE_API_URL;
 
-export const getAllData = async () => {
+export const addData = async (employee) => {
   try {
-    const response = await axios.get(API_URL);
+    const response = await axios.post(API_URL, employee);
     return response.data;
   } catch (error) {
-    console.error("Klaida gaunant duomenis:", error.message);
+    console.error("Klaida pridedant darbuotoją:", error.message);
     throw error;
   }
 };

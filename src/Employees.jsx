@@ -4,7 +4,7 @@ function Employees({ employees, onDelete }) {
   return (
     <div className={style.card}>
       <div className={style.header}>
-        <img className={style.img} src={employees.photo} alt="profile" />
+        <img className={style.img} src={employees.image} alt="profile" />
         <div className={style.badge}>{employees.department}</div>
       </div>
 

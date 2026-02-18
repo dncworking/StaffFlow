@@ -2,7 +2,7 @@ import React from "react";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import style from "./RegANDLog.module.css";
+import style from "./Forms.module.css";
 
 const Register = () => {
   const navigate = useNavigate();

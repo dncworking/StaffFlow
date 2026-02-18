@@ -8,7 +8,9 @@ body {
   cursor: default;
 }
 
-.button {
+.button,
+.buttonAdd,
+.buttonCancel {
   background-color: #1c1e33;
   margin-top: 15px;
   border: 1px solid white;
@@ -18,14 +20,21 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
+.button,
+.buttonAdd:hover {
   background-color: #232749;
   transform: translateY(-1px) scale(1.02);
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
+.buttonCancel:hover {
+  background-color: #e63434;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
 
-.button:active {
-  transform: translateY(0) scale(0.98); /* Paspaudus mygtukas trumpam "susispaudžia" */
+.button,
+.buttonAdd :active {
+  transform: translateY(0) scale(0.98);
 }
 
 .main {
@@ -65,11 +74,10 @@ body {
   margin-block: 15px;
 }
 
-/* SPRENDIMAS AUTOFILL PROBLEMAI */
+
 .input:-webkit-autofill,
 .input:-webkit-autofill:hover,
 .input:-webkit-autofill:focus {
-
   -webkit-text-fill-color: white !important;
   box-shadow: 0 0 0px 1000px #25273e inset !important;
   border: none !important;
@@ -79,3 +87,22 @@ body {
   color: #ff0000d8;
   margin-bottom: 10px;
 }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.buttonAdd {
+  width: 40%;
+}
+.buttonCancel {
+  width: 40%;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

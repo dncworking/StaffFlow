@@ -1,0 +1,42 @@
+.navbar {
+  margin-inline: 5%;
+  padding: 15px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 85px;
+}
+.input {
+  width: 100%;
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-left: 15px;
+  color: aliceblue;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  background-color: #1c1e33;
+  margin-top: 15px;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #232749;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.button :active {
+  transform: translateY(0) scale(0.98);
+}

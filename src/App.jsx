@@ -10,6 +10,7 @@ import Register from "./Register";
 import Login from "./Login";
 import Welcome from "./Welcome";
 import EmployeesList from "./EmployeesList";
+import AddForm from "./AddEmployeesForm";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(
@@ -33,7 +34,9 @@ function App() {
         {/* PAGRINDINIS PUSLAPIS */}
         <Route
           path="/"
-          element={isAuthenticated ? <Navigate to="/employees" /> : <Welcome />}
+          element={
+            /* isAuthenticated ? <Navigate to="/employees" />  :*/ <Welcome />
+          }
         />
 
         {/* REGISTRACIJA IR PRISIJUNGIMAS */}
@@ -51,6 +54,7 @@ function App() {
             )
           }
         />
+        <Route path="/addEmployeeForm" element={<AddForm />} />
       </Routes>
     </Router>
   );

@@ -2,14 +2,14 @@
   "employees": [
     {
       "id": 1,
-      "firstName": "Jonas",
-      "lastName": "Jonaitis",
+      "firstName": "Aistė",
+      "lastName": "Aistytė",
       "birthDate": "1985-05-12",
       "position": "Vyriausiasis programuotojas",
       "salary": 4500,
       "department": "IT",
       "startDate": "2020-01-15",
-      "photo": "https://i.pravatar.cc/150?u=1",
+      "image": "https://i.pravatar.cc/150?u=1",
       "skills": [
         "React",
         "Node.js",
@@ -18,14 +18,14 @@
     },
     {
       "id": 2,
-      "firstName": "Aistė",
-      "lastName": "Aistytė",
+      "firstName": " Jonas",
+      "lastName": "Jonaitis",
       "birthDate": "1992-03-22",
       "position": "UI/UX dizainerė",
       "salary": 3200,
       "department": "Dizainas",
       "startDate": "2021-06-10",
-      "photo": "https://i.pravatar.cc/150?u=2",
+      "image": "https://i.pravatar.cc/150?u=2",
       "skills": [
         "Figma",
         "Adobe XD",
@@ -34,14 +34,14 @@
     },
     {
       "id": 3,
-      "firstName": "Marius",
-      "lastName": "Kazlauskas",
+      "firstName": "Angelina",
+      "lastName": "Kazlauskiene",
       "birthDate": "1988-11-05",
       "position": "Projektų vadovas",
       "salary": 3800,
       "department": "Vadyba",
       "startDate": "2019-03-01",
-      "photo": "https://i.pravatar.cc/150?u=3",
+      "image": "https://i.pravatar.cc/150?u=3",
       "skills": [
         "Agile",
         "Jira",
@@ -57,7 +57,7 @@
       "salary": 2500,
       "department": "Rinkodara",
       "startDate": "2022-09-20",
-      "photo": "https://i.pravatar.cc/150?u=4",
+      "image": "https://i.pravatar.cc/150?u=4",
       "skills": [
         "SEO",
         "Google Ads",
@@ -73,7 +73,7 @@
       "salary": 4200,
       "department": "IT",
       "startDate": "2020-11-12",
-      "photo": "https://i.pravatar.cc/150?u=5",
+      "image": "https://i.pravatar.cc/150?u=5",
       "skills": [
         "Python",
         "Django",
@@ -89,7 +89,7 @@
       "salary": 2900,
       "department": "Finansai",
       "startDate": "2018-05-15",
-      "photo": "https://i.pravatar.cc/150?u=6",
+      "image": "https://i.pravatar.cc/150?u=6",
       "skills": [
         "Excel",
         "Audit",
@@ -98,14 +98,14 @@
     },
     {
       "id": 7,
-      "firstName": "Darius",
-      "lastName": "Beržinis",
+      "firstName": "Darija",
+      "lastName": "Beržinskiene",
       "birthDate": "1982-04-18",
       "position": "IT skyriaus vadovas",
       "salary": 5500,
       "department": "IT",
       "startDate": "2015-08-01",
-      "photo": "https://i.pravatar.cc/150?u=7",
+      "image": "https://i.pravatar.cc/150?u=7",
       "skills": [
         "Leadership",
         "Architecture",
@@ -121,7 +121,7 @@
       "salary": 2700,
       "department": "Pardavimai",
       "startDate": "2021-01-10",
-      "photo": "https://i.pravatar.cc/150?u=9",
+      "image": "https://i.pravatar.cc/150?u=9",
       "skills": [
         "B2B",
         "Negotiation",
@@ -137,7 +137,7 @@
       "salary": 3100,
       "department": "HR",
       "startDate": "2020-04-15",
-      "photo": "https://i.pravatar.cc/150?u=10",
+      "image": "https://i.pravatar.cc/150?u=10",
       "skills": [
         "Recruitment",
         "Training",
@@ -146,14 +146,14 @@
     },
     {
       "id": 11,
-      "firstName": "Andrius",
-      "lastName": "Lukošius",
+      "firstName": "Goda",
+      "lastName": "Lukošiene",
       "birthDate": "1989-09-09",
       "position": "DevOps inžinierius",
       "salary": 4800,
       "department": "IT",
       "startDate": "2019-10-01",
-      "photo": "https://i.pravatar.cc/150?u=11",
+      "image": "https://i.pravatar.cc/150?u=11",
       "skills": [
         "Docker",
         "AWS",
@@ -169,7 +169,7 @@
       "salary": 3500,
       "department": "Duomenys",
       "startDate": "2022-01-05",
-      "photo": "https://i.pravatar.cc/150?u=12",
+      "image": "https://i.pravatar.cc/150?u=12",
       "skills": [
         "PowerBI",
         "SQL",
@@ -178,14 +178,14 @@
     },
     {
       "id": 13,
-      "firstName": "Rimas",
-      "lastName": "Kalnietis",
+      "firstName": "Rima",
+      "lastName": "Kalniene",
       "birthDate": "1980-01-01",
       "position": "Sandėlio vadovas",
       "salary": 2400,
       "department": "Logistika",
       "startDate": "2012-05-20",
-      "photo": "https://i.pravatar.cc/150?u=13",
+      "image": "https://i.pravatar.cc/150?u=13",
       "skills": [
         "Logistics",
         "Inventory Management"
@@ -193,14 +193,14 @@
     },
     {
       "id": 14,
-      "firstName": "Simona",
-      "lastName": "Sniegiūtė",
+      "firstName": "Simonas",
+      "lastName": "Sniegiūtis",
       "birthDate": "1996-12-05",
       "position": "Socialinių tinklų vadybininkė",
       "salary": 2200,
       "department": "Rinkodara",
       "startDate": "2023-05-12",
-      "photo": "https://i.pravatar.cc/150?u=14",
+      "image": "https://i.pravatar.cc/150?u=14",
       "skills": [
         "Copywriting",
         "Instagram",
@@ -216,7 +216,7 @@
       "salary": 3300,
       "department": "IT",
       "startDate": "2017-02-14",
-      "photo": "https://i.pravatar.cc/150?u=15",
+      "image": "https://i.pravatar.cc/150?u=15",
       "skills": [
         "Linux",
         "Security",
@@ -232,7 +232,7 @@
       "salary": 3900,
       "department": "Teisė",
       "startDate": "2020-07-01",
-      "photo": "https://i.pravatar.cc/150?u=16",
+      "image": "https://i.pravatar.cc/150?u=16",
       "skills": [
         "Contracts",
         "GDPR",
@@ -248,7 +248,7 @@
       "salary": 4000,
       "department": "Gamyba",
       "startDate": "2016-09-15",
-      "photo": "https://i.pravatar.cc/150?u=17",
+      "image": "https://i.pravatar.cc/150?u=17",
       "skills": [
         "Manufacturing",
         "Quality Control"
@@ -263,7 +263,7 @@
       "salary": 5000,
       "department": "Projektavimas",
       "startDate": "2014-11-01",
-      "photo": "https://i.pravatar.cc/150?u=19",
+      "image": "https://i.pravatar.cc/150?u=19",
       "skills": [
         "AutoCAD",
         "Revit",
@@ -279,7 +279,7 @@
       "salary": 2600,
       "department": "Finansai",
       "startDate": "2021-03-20",
-      "photo": "https://i.pravatar.cc/150?u=20",
+      "image": "https://i.pravatar.cc/150?u=20",
       "skills": [
         "Taxation",
         "Reporting"

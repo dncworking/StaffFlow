@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import style from "./RegANDLog.module.css";
+import style from "./Forms.module.css";
 const Login = ({ onLoginSuccess }) => {
   const navigate = useNavigate();
   const {
