@@ -20,7 +20,11 @@ body {
   cursor: pointer;
 }
 
-.button,
+.button:hover {
+  background-color: #232749;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
 .buttonAdd:hover {
   background-color: #232749;
   transform: translateY(-1px) scale(1.02);
@@ -32,10 +36,10 @@ body {
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
-.button,
+/* .button,
 .buttonAdd :active {
   transform: translateY(0) scale(0.98);
-}
+} */
 
 .main {
   color: white;
@@ -74,7 +78,6 @@ body {
   margin-block: 15px;
 }
 
-
 .input:-webkit-autofill,
 .input:-webkit-autofill:hover,
 .input:-webkit-autofill:focus {
@@ -105,4 +108,3 @@ body {
   -webkit-appearance: none;
   margin: 0;
 }
-

@@ -38,7 +38,7 @@ const Login = ({ onLoginSuccess }) => {
           className={style.input}
           placeholder="El. Paštas"
           type="text"
-          {...register("email", { required: "Įveskite el. paštą" })}
+          {...register("email", { required: "Įveskite El. paštą" })}
         />
         {errors.email && (
           <span className={style.error}>{errors.email.message}</span>

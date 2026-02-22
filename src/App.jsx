@@ -11,6 +11,7 @@ import Login from "./Login";
 import Welcome from "./Welcome";
 import EmployeesList from "./EmployeesList";
 import AddForm from "./AddEmployeesForm";
+import EditEmployee from "./EditEmployee";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -22,22 +23,13 @@ function App() {
     setIsAuthenticated(true);
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
-    setIsAuthenticated(false);
-  };
 
   return (
     <Router>
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         {/* PAGRINDINIS PUSLAPIS */}
-        <Route
-          path="/"
-          element={
-            /* isAuthenticated ? <Navigate to="/employees" />  :*/ <Welcome />
-          }
-        />
+        <Route path="/" element={<Welcome />} />
 
         {/* REGISTRACIJA IR PRISIJUNGIMAS */}
         <Route path="/register" element={<Register />} />
@@ -48,12 +40,13 @@ function App() {
           path="/employees"
           element={
             isAuthenticated ? (
-              <EmployeesList onLogout={handleLogout} />
+              <EmployeesList/>
             ) : (
               <Navigate to="/login" />
             )
           }
         />
+        <Route path="/edit/:id" element={<EditEmployee />} />
         <Route path="/addEmployeeForm" element={<AddForm />} />
       </Routes>
     </Router>

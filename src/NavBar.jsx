@@ -2,7 +2,11 @@ import style from "./NavBar.module.css";
 import { useNavigate } from "react-router-dom";
 function NavBar({ onSearch }) {
   const navigate = useNavigate();
-
+  const cancel = async () => {
+    if (window.confirm("Ar tikrai norite išeiti?")) {
+      navigate("/");
+    }
+  };
   return (
     <nav className={style.navbar}>
       <div className={style.wrapper}>
@@ -17,6 +21,9 @@ function NavBar({ onSearch }) {
           onClick={() => navigate("/addEmployeeForm")}
         >
           Pridėti darbuotoją
+        </button>
+        <button className={style.buttonCancel} onClick={cancel}>
+          X
         </button>
       </div>
     </nav>

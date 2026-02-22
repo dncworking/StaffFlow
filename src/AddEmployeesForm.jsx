@@ -26,7 +26,7 @@ function AddForm() {
       let imageUrl = defaultImg;
 
       if (data.image && data.image.length > 0) {
-        imageUrl = await toBase64(data.image[0]); 
+        imageUrl = await toBase64(data.image[0]);
       }
 
       const employeeData = {
@@ -34,7 +34,7 @@ function AddForm() {
         image: imageUrl,
       };
 
-      await addData(employeeData); 
+      await addData(employeeData);
       navigate("/employees");
     } catch (error) {
       console.error(error);
@@ -42,7 +42,7 @@ function AddForm() {
   };
 
   const cancel = async () => {
-    if (window.confirm("Ar tikrai norite i6eiti?")) {
+    if (window.confirm("Ar tikrai norite išeiti?")) {
       navigate("/employees");
     }
   };
@@ -56,7 +56,7 @@ function AddForm() {
             className={style.input}
             type="text"
             placeholder="Vardas"
-            {...register("firstName", { required: "Vardas privalomas" })}
+            {...register("firstName", { required: "Vardas yra privalomas" })}
           />
           {errors.firstName && (
             <span className={style.error}>{errors.firstName.message}</span>
@@ -64,8 +64,8 @@ function AddForm() {
           <input
             className={style.input}
             type="text"
-            placeholder="Pavard4"
-            {...register("lastName", { required: "Pavard4 privaloma" })}
+            placeholder="Pavardė"
+            {...register("lastName", { required: "Pavardė yra privaloma" })}
           />
           {errors.lastName && (
             <span className={style.error}>{errors.lastName.message}</span>
@@ -80,7 +80,9 @@ function AddForm() {
             className={style.input}
             type="date"
             placeholder="Gimimo data"
-            {...register("birthDate", { required: "Gimimo data privaloma" })}
+            {...register("birthDate", {
+              required: "Gimimo data yra privaloma",
+            })}
           />
           {errors.birthDate && (
             <span className={style.error}>{errors.birthDate.message}</span>
@@ -89,7 +91,7 @@ function AddForm() {
             className={style.input}
             type="text"
             placeholder="Pozicija"
-            {...register("position", { required: "Pozicija privaloma" })}
+            {...register("position", { required: "Pozicija yra privaloma" })}
           />
           {errors.position && (
             <span className={style.error}>{errors.position.message}</span>
@@ -98,7 +100,7 @@ function AddForm() {
             className={style.input}
             type="number"
             placeholder="Atlyginimas"
-            {...register("salary", { required: "Atlyginimas privalomas" })}
+            {...register("salary", { required: "Atlyginimas yra privalomas" })}
           />
           {errors.salary && (
             <span className={style.error}>{errors.salary.message}</span>
@@ -108,11 +110,29 @@ function AddForm() {
             type="text"
             placeholder="Departamentas"
             {...register("department", {
-              required: "Departamentas privalomas",
+              required: "Departamentas yra privalomas",
             })}
           />
           {errors.department && (
             <span className={style.error}>{errors.department.message}</span>
+          )}
+          <input
+            className={style.input}
+            type="tel"
+            placeholder="Telefono Nr."
+            {...register("phone", { required: "Telefono Nr. yra privalomas" })}
+          />
+          {errors.phone && (
+            <span className={style.error}>{errors.phone.message}</span>
+          )}
+          <input
+            className={style.input}
+            type="text"
+            placeholder="El. paštas"
+            {...register("email", { required: "El. paštas yra privalomas" })}
+          />
+          {errors.email && (
+            <span className={style.error}>{errors.email.message}</span>
           )}
 
           <div className={style.buttons}>
@@ -121,10 +141,10 @@ function AddForm() {
               onClick={cancel}
               type="button"
             >
-              At6aukti
-            </button>{" "}
+              Atšaukti
+            </button>
             <button className={style.buttonAdd} type="submit">
-              Prid4ti
+              Pridėti
             </button>
           </div>
         </form>

@@ -24,40 +24,40 @@ const Register = () => {
     setTimeout(() => {
       navigate("/login");
     }, 1500);
-    console.log("Sekmingai uzregistruota", data);
+    console.log("Sėkmingai užsiregistruota", data);
   };
 
   return (
     <div className={style.main}>
       <h2 className={style.h2}>Registracija</h2>
       <form onSubmit={handleSubmit(onSubmit)} className={style.form}>
-        {/* <label className={style.label}>Vardas</label> */}
+     
         <input
           className={style.input}
           placeholder="Vardas"
           type="text"
-          {...register("firstName", { required: "Vardas butinas" })}
+          {...register("firstName", { required: "Vardas yra privalomas" })}
         />
         {errors.firstName && (
           <span className={style.error}>{errors.firstName.message}</span>
         )}
-        {/* <label className={style.label}>Pavarde</label> */}
+  
         <input
           placeholder="Pavardė"
           className={style.input}
           type="text"
-          {...register("lastName", { required: "Pavarde butina" })}
+          {...register("lastName", { required: "Pavardė yra privaloma" })}
         />
         {errors.lastName && (
           <span className={style.error}>{errors.lastName.message}</span>
         )}
-        {/* <label className={style.label}>El. Pastas</label> */}
+       
         <input
           className={style.input}
           placeholder="El. paštas"
           type="text"
           {...register("email", {
-            required: "Pastas butinas",
+            required: "Paštas yra privalomas",
             pattern: {
               value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
               message: "Neteisingas el. pašto formatas",
@@ -67,36 +67,36 @@ const Register = () => {
         {errors.email && (
           <span className={style.error}>{errors.email.message}</span>
         )}
-        {/* <label className={style.label}>Imones pavadinimas</label> */}
+        
         <input
           className={style.input}
           placeholder="Įmonės pavadinimas"
           type="text"
           {...register("name", {
-            required: "Imones pavadinimas privalomas!",
+            required: "Įmonės pavadinimas yra privalomas",
           })}
         />
         {errors.name && (
           <span className={style.error}>{errors.name.message}</span>
         )}
-        {/* <label className={style.label}>Slaptazodis</label> */}
+        
         <input
           className={style.input}
           placeholder="Slaptažodis"
           type="password"
           {...register("password", {
-            required: "Slaptazodis privalomas",
+            required: "Slaptažodis yra privalomas",
             pattern: {
               value: /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{8,})\S$/,
               message:
-                "Slaptazodis privalo tureti maziausei 8 simbolius, didziaja raide bei skaiciu",
+                "Slaptažodis privalo turėti mažiausiai 8 simbolius, didžiaja raide bei skaičiu",
             },
           })}
         />
         {errors.password && (
           <span className={style.error}>{errors.password.message}</span>
         )}
-        {/* <label className={style.label}>Pakartokite slaptazodi</label> */}
+      
         <input
           className={style.input}
           placeholder="Pakartokite slaptažodį"
@@ -104,7 +104,7 @@ const Register = () => {
           {...register("confirmPassword", {
             required: "Slaptazodis privalomas",
             validate: (val) =>
-              val === getValues("password") || "Slaptazodziai nesutampa",
+              val === getValues("password") || "Slaptažodžiai nesutampa",
           })}
         />
         {errors.confirmPassword && (

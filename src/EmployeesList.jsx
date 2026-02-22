@@ -22,6 +22,7 @@ function EmployeesList() {
         setIsAdmin(adminStatus);
 
         if (adminStatus) {
+          //saugiklis, kad programa nesulužtų, jei serveris netyčia atsiųstų ne sąrašą, o ką nors kita.
           setEmployees(Array.isArray(result) ? result : []);
         } else {
           setEmployees([]);
